@@ -1,0 +1,20 @@
+#define SERVO_CLAW   SERVO_CH1 //手爪舵机
+#define SERVO_ARM3   SERVO_CH2 //臂3舵机，靠近手爪的臂
+#define SERVO_ARM2   SERVO_CH3 //臂2舵机，中间的臂
+#define SERVO_ARM1   SERVO_CH4 //臂1舵机，靠近底盘的臂
+#define SERVO_ROTARY SERVO_CH5 //底盘旋转舵机
+
+#define SERVO_CH1   0
+#define SERVO_CH2   1
+#define SERVO_CH3   2
+#define SERVO_CH4   3
+#define SERVO_CH5   4
+#define SERVO_CH6   5
+
+
+四号舵机（即anglevalue3）为1860时，舵机5运动（1110-1740）会导致机械臂与料盘摩擦
+
+夹取料盘上的物料时的舵机数值 AngleValue[1] 2230  AngleValue[2] 1650 AngleValue[3] 870 AngleValue[5] 1200
+
+夹取地面的物料时的舵机数值 
+

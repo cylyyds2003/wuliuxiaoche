@@ -1,0 +1,105 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a 8613686, HP Inc., LIC=585FJ-U8XIB-RAYDM-XX4CM-M93MS-YWGY9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      CMSIS_AGDI.dll V1.28.3.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\keil5\data\stm32\wuliu\MDK-ARM\STM32F103R8_IOC.uvprojx
+Project File Date:  10/29/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\keil5\ARM\ARMCC\Bin'
+Build target 'STM32F103R8_IOC'
+compiling app.c...
+..\FunctionCode\APP\app.c(617): warning:  #111-D: statement is unreachable
+      forward_hanshu(30,0);
+..\FunctionCode\APP\app.c(22): warning:  #177-D: variable "WirelessUP_S"  was declared but never referenced
+  static KEY_T WirelessUP_S;
+..\FunctionCode\APP\app.c(23): warning:  #177-D: variable "WirelessDOWN_S"  was declared but never referenced
+  static KEY_T WirelessDOWN_S;
+..\FunctionCode\APP\app.c(24): warning:  #177-D: variable "WirelessLEFT_S"  was declared but never referenced
+  static KEY_T WirelessLEFT_S;
+..\FunctionCode\APP\app.c(25): warning:  #177-D: variable "WirelessRIGHT_S"  was declared but never referenced
+  static KEY_T WirelessRIGHT_S;
+..\FunctionCode\APP\app.c(26): warning:  #177-D: variable "WirelessTRI_S"  was declared but never referenced
+  static KEY_T WirelessTRI_S;
+..\FunctionCode\APP\app.c(27): warning:  #177-D: variable "WirelessCIRCLE_S"  was declared but never referenced
+  static KEY_T WirelessCIRCLE_S;
+..\FunctionCode\APP\app.c(28): warning:  #177-D: variable "WirelessFORK_S"  was declared but never referenced
+  static KEY_T WirelessFORK_S;
+..\FunctionCode\APP\app.c(29): warning:  #177-D: variable "WirelessREC_S"  was declared but never referenced
+  static KEY_T WirelessREC_S;
+..\FunctionCode\APP\app.c(30): warning:  #177-D: variable "WirelessL1_S"  was declared but never referenced
+  static KEY_T WirelessL1_S;
+..\FunctionCode\APP\app.c(31): warning:  #177-D: variable "WirelessR1_S"  was declared but never referenced
+  static KEY_T WirelessR1_S;
+..\FunctionCode\APP\app.c(63): warning:  #177-D: function "Wireless_UP"  was declared but never referenced
+  static uint8_t Wireless_UP(void)
+..\FunctionCode\APP\app.c(68): warning:  #177-D: function "Wireless_DOWN"  was declared but never referenced
+  static uint8_t Wireless_DOWN(void)
+..\FunctionCode\APP\app.c(73): warning:  #177-D: function "Wireless_LEFT"  was declared but never referenced
+  static uint8_t Wireless_LEFT(void)
+..\FunctionCode\APP\app.c(78): warning:  #177-D: function "Wireless_RIGHT"  was declared but never referenced
+  static uint8_t Wireless_RIGHT(void)
+..\FunctionCode\APP\app.c(83): warning:  #177-D: function "Wireless_TRI"  was declared but never referenced
+  static uint8_t Wireless_TRI(void)
+..\FunctionCode\APP\app.c(88): warning:  #177-D: function "Wireless_CIRCLE"  was declared but never referenced
+  static uint8_t Wireless_CIRCLE(void)
+..\FunctionCode\APP\app.c(93): warning:  #177-D: function "Wireless_FORK"  was declared but never referenced
+  static uint8_t Wireless_FORK(void)
+..\FunctionCode\APP\app.c(98): warning:  #177-D: function "Wireless_REC"  was declared but never referenced
+  static uint8_t Wireless_REC(void)
+..\FunctionCode\APP\app.c(103): warning:  #177-D: function "Wireless_L1"  was declared but never referenced
+  static uint8_t Wireless_L1(void)
+..\FunctionCode\APP\app.c(108): warning:  #177-D: function "Wireless_R1"  was declared but never referenced
+  static uint8_t Wireless_R1(void)
+..\FunctionCode\APP\app.c(119): warning:  #177-D: function "ServoSetPluseAndTime"  was declared but never referenced
+  static void ServoSetPluseAndTime(uint8_t mode, uint16_t pwmval,uint16_t time)//¶æ»ú¿ØÖÆº¯Êý
+..\FunctionCode\APP\app.c: 22 warnings, 0 errors
+linking...
+Program Size: Code=20326 RO-data=326 RW-data=136 ZI-data=4296  
+FromELF: creating hex file...
+"STM32F103R8_IOC\STM32F103R8_IOC.axf" - 0 Error(s), 22 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STM32F103R8_IOC
+  D:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

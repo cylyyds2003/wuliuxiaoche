@@ -463,11 +463,19 @@ ARM Macro Assembler    Page 8
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=stm32f103r8_ioc\startup_stm32f103xb.d -ostm32f103r8_ioc\startup_st
+<<<<<<< HEAD
 m32f103xb.o -I.\RTE\_STM32F103R8_IOC -ID:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\
 Include -ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include --predefine
 ="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 524" --predefine="_RTE
 _ SETA 1" --predefine="STM32F10X_MD SETA 1" --list=startup_stm32f103xb.lst star
 tup_stm32f103xb.s
+=======
+m32f103xb.o -I.\RTE\_STM32F103R8_IOC -ID:\keilruanjian\ARM\PACK\ARM\CMSIS\5.9.0
+\CMSIS\Core\Include -ID:\keilruanjian\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\
+Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 539
+" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_MD SETA 1" --predefine="_RT
+E_ SETA 1" --list=startup_stm32f103xb.lst startup_stm32f103xb.s
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 
 
 

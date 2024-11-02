@@ -7,13 +7,21 @@ stm32f103r8_ioc\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 stm32f103r8_ioc\main.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 stm32f103r8_ioc\main.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
 stm32f103r8_ioc\main.o: ../Drivers/CMSIS/Include/core_cm3.h
+<<<<<<< HEAD
 stm32f103r8_ioc\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+=======
+stm32f103r8_ioc\main.o: D:\keilruanjian\ARM\ARMCC\Bin\..\include\stdint.h
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 stm32f103r8_ioc\main.o: ../Drivers/CMSIS/Include/cmsis_version.h
 stm32f103r8_ioc\main.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 stm32f103r8_ioc\main.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 stm32f103r8_ioc\main.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 stm32f103r8_ioc\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+<<<<<<< HEAD
 stm32f103r8_ioc\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+=======
+stm32f103r8_ioc\main.o: D:\keilruanjian\ARM\ARMCC\Bin\..\include\stddef.h
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 stm32f103r8_ioc\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 stm32f103r8_ioc\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 stm32f103r8_ioc\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
@@ -36,6 +44,7 @@ stm32f103r8_ioc\main.o: ../Inc/tim.h
 stm32f103r8_ioc\main.o: ../Inc/usart.h
 stm32f103r8_ioc\main.o: ../Inc/gpio.h
 stm32f103r8_ioc\main.o: ../FunctionCode/APP/app.h
+<<<<<<< HEAD
 stm32f103r8_ioc\main.o: ../FunctionCode/APP/data.h
 stm32f103r8_ioc\main.o: ../FunctionCode/BSP/BSP_HAL_GPIO/bsp_hal_gpio.h
 stm32f103r8_ioc\main.o: ../FunctionCode/BSP/mytype.h
@@ -50,3 +59,5 @@ stm32f103r8_ioc\main.o: ../FunctionCode/BSP/BSP_HAL_PS2/bsp_hal_ps2.h
 stm32f103r8_ioc\main.o: ../FunctionCode/function/UnderpanControl_Motor/UnderpanControl_Motor.h
 stm32f103r8_ioc\main.o: ../FunctionCode/function/separate_button.h
 stm32f103r8_ioc\main.o: ../Inc/pid.h
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671

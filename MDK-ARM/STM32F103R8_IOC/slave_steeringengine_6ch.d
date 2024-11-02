@@ -1,7 +1,12 @@
 stm32f103r8_ioc\slave_steeringengine_6ch.o: ..\FunctionCode\CAN_Communication\SlaveControlPanel\SLAVE_SteeringEngine_6CH\SLAVE_SteeringEngine_6CH.c
 stm32f103r8_ioc\slave_steeringengine_6ch.o: ../FunctionCode/CAN_Communication/SlaveControlPanel/SLAVE_SteeringEngine_6CH/SLAVE_SteeringEngine_6CH.h
+<<<<<<< HEAD
 stm32f103r8_ioc\slave_steeringengine_6ch.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 stm32f103r8_ioc\slave_steeringengine_6ch.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+=======
+stm32f103r8_ioc\slave_steeringengine_6ch.o: D:\keilruanjian\ARM\ARMCC\Bin\..\include\stdint.h
+stm32f103r8_ioc\slave_steeringengine_6ch.o: D:\keilruanjian\ARM\ARMCC\Bin\..\include\string.h
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 stm32f103r8_ioc\slave_steeringengine_6ch.o: ../FunctionCode/CAN_Communication/CAN_Communication.h
 stm32f103r8_ioc\slave_steeringengine_6ch.o: ../FunctionCode/BSP/BSP_HAL_CAN/bsp_hal_can.h
 stm32f103r8_ioc\slave_steeringengine_6ch.o: ../FunctionCode/BSP/mytype.h
@@ -17,7 +22,11 @@ stm32f103r8_ioc\slave_steeringengine_6ch.o: ../Drivers/CMSIS/Include/cmsis_compi
 stm32f103r8_ioc\slave_steeringengine_6ch.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 stm32f103r8_ioc\slave_steeringengine_6ch.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 stm32f103r8_ioc\slave_steeringengine_6ch.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+<<<<<<< HEAD
 stm32f103r8_ioc\slave_steeringengine_6ch.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+=======
+stm32f103r8_ioc\slave_steeringengine_6ch.o: D:\keilruanjian\ARM\ARMCC\Bin\..\include\stddef.h
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 stm32f103r8_ioc\slave_steeringengine_6ch.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 stm32f103r8_ioc\slave_steeringengine_6ch.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 stm32f103r8_ioc\slave_steeringengine_6ch.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h

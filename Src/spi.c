@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -17,6 +18,27 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
+=======
+/**
+  ******************************************************************************
+  * File Name          : SPI.c
+  * Description        : This file provides code for the configuration
+  *                      of the SPI instances.
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; Copyright (c) 2024 STMicroelectronics.
+  * All rights reserved.</center></h2>
+  *
+  * This software component is licensed by ST under BSD 3-Clause license,
+  * the "License"; You may not use this file except in compliance with the
+  * License. You may obtain a copy of the License at:
+  *                        opensource.org/licenses/BSD-3-Clause
+  *
+  ******************************************************************************
+  */
+
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 /* Includes ------------------------------------------------------------------*/
 #include "spi.h"
 
@@ -31,6 +53,7 @@ SPI_HandleTypeDef hspi2;
 void MX_SPI1_Init(void)
 {
 
+<<<<<<< HEAD
   /* USER CODE BEGIN SPI1_Init 0 */
 
   /* USER CODE END SPI1_Init 0 */
@@ -38,6 +61,8 @@ void MX_SPI1_Init(void)
   /* USER CODE BEGIN SPI1_Init 1 */
 
   /* USER CODE END SPI1_Init 1 */
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
   hspi1.Instance = SPI1;
   hspi1.Init.Mode = SPI_MODE_MASTER;
   hspi1.Init.Direction = SPI_DIRECTION_2LINES;
@@ -54,15 +79,19 @@ void MX_SPI1_Init(void)
   {
     Error_Handler();
   }
+<<<<<<< HEAD
   /* USER CODE BEGIN SPI1_Init 2 */
 
   /* USER CODE END SPI1_Init 2 */
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 
 }
 /* SPI2 init function */
 void MX_SPI2_Init(void)
 {
 
+<<<<<<< HEAD
   /* USER CODE BEGIN SPI2_Init 0 */
 
   /* USER CODE END SPI2_Init 0 */
@@ -70,6 +99,8 @@ void MX_SPI2_Init(void)
   /* USER CODE BEGIN SPI2_Init 1 */
 
   /* USER CODE END SPI2_Init 1 */
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
   hspi2.Instance = SPI2;
   hspi2.Init.Mode = SPI_MODE_MASTER;
   hspi2.Init.Direction = SPI_DIRECTION_2LINES;
@@ -86,9 +117,12 @@ void MX_SPI2_Init(void)
   {
     Error_Handler();
   }
+<<<<<<< HEAD
   /* USER CODE BEGIN SPI2_Init 2 */
 
   /* USER CODE END SPI2_Init 2 */
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 
 }
 
@@ -200,3 +234,8 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* spiHandle)
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */
+<<<<<<< HEAD
+=======
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671

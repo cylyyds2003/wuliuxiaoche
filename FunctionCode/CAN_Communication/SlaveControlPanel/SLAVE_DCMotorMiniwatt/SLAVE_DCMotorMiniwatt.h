@@ -27,7 +27,11 @@ typedef struct DCMotorMiniwatt_T
             uint16_t Speed;
             uint16_t EncoderNum; //V1.0.3版本上才有此数据
             uint16_t Coded_Value;
+<<<<<<< HEAD
             int16_t Fault;
+=======
+            uint16_t Fault;
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
         }DATE;
     }Motor_UploadData;//电机反馈数据 
     

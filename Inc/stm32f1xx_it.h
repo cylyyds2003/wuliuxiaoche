@@ -56,12 +56,25 @@ void SVC_Handler(void);
 void DebugMon_Handler(void);
 void PendSV_Handler(void);
 void SysTick_Handler(void);
+<<<<<<< HEAD
 void DMA1_Channel3_IRQHandler(void);
 void DMA1_Channel5_IRQHandler(void);
+=======
+void DMA1_Channel2_IRQHandler(void);
+void DMA1_Channel3_IRQHandler(void);
+void DMA1_Channel4_IRQHandler(void);
+void DMA1_Channel5_IRQHandler(void);
+void DMA1_Channel6_IRQHandler(void);
+void DMA1_Channel7_IRQHandler(void);
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 void USB_LP_CAN1_RX0_IRQHandler(void);
 void TIM2_IRQHandler(void);
 void TIM3_IRQHandler(void);
 void USART1_IRQHandler(void);
+<<<<<<< HEAD
+=======
+void USART2_IRQHandler(void);
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 void USART3_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 
@@ -72,3 +85,8 @@ void USART3_IRQHandler(void);
 #endif
 
 #endif /* __STM32F1xx_IT_H */
+<<<<<<< HEAD
+=======
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671

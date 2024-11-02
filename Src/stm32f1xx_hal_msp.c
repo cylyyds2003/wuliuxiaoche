@@ -21,7 +21,10 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+<<<<<<< HEAD
 
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
@@ -85,3 +88,8 @@ void HAL_MspInit(void)
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */
+<<<<<<< HEAD
+=======
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671

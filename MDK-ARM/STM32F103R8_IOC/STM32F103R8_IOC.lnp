@@ -16,7 +16,10 @@
 "stm32f103r8_ioc\bsp_hal_ps2.o"
 "stm32f103r8_ioc\underpancontrol_motor.o"
 "stm32f103r8_ioc\separate_button.o"
+<<<<<<< HEAD
 "stm32f103r8_ioc\bsp_hal_uart3dma232andttl.o"
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 "stm32f103r8_ioc\app.o"
 "stm32f103r8_ioc\data.o"
 "stm32f103r8_ioc\pid.o"

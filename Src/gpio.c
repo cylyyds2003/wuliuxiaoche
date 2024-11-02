@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -21,6 +22,29 @@
 /* Includes ------------------------------------------------------------------*/
 #include "gpio.h"
 
+=======
+/**
+  ******************************************************************************
+  * File Name          : gpio.c
+  * Description        : This file provides code for the configuration
+  *                      of all used GPIO pins.
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; Copyright (c) 2024 STMicroelectronics.
+  * All rights reserved.</center></h2>
+  *
+  * This software component is licensed by ST under BSD 3-Clause license,
+  * the "License"; You may not use this file except in compliance with the
+  * License. You may obtain a copy of the License at:
+  *                        opensource.org/licenses/BSD-3-Clause
+  *
+  ******************************************************************************
+  */
+
+/* Includes ------------------------------------------------------------------*/
+#include "gpio.h"
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 /* USER CODE BEGIN 0 */
 
 /* USER CODE END 0 */
@@ -38,8 +62,11 @@
         * Output
         * EVENT_OUT
         * EXTI
+<<<<<<< HEAD
      PA2   ------> USART2_TX
      PA3   ------> USART2_RX
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 */
 void MX_GPIO_Init(void)
 {
@@ -95,6 +122,7 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+<<<<<<< HEAD
   /*Configure GPIO pin : PA2 */
   GPIO_InitStruct.Pin = GPIO_PIN_2;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
@@ -107,6 +135,8 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
   /*Configure GPIO pins : PAPin PAPin */
   GPIO_InitStruct.Pin = NSS_Pin|RS485_EN_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -141,3 +171,8 @@ void MX_GPIO_Init(void)
 /* USER CODE BEGIN 2 */
 
 /* USER CODE END 2 */
+<<<<<<< HEAD
+=======
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671

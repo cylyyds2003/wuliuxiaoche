@@ -185,6 +185,12 @@
             <hadXRAM>0</hadXRAM>
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
+<<<<<<< HEAD
+=======
+            <RvdsMve>0</RvdsMve>
+            <RvdsCdeCp>0</RvdsCdeCp>
+            <nBranchProt>0</nBranchProt>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -312,7 +318,11 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
+<<<<<<< HEAD
             <Optim>1</Optim>
+=======
+            <Optim>4</Optim>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -325,9 +335,16 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
+<<<<<<< HEAD
             <useXO>0</useXO>
             <v6Lang>3</v6Lang>
             <v6LangP>3</v6LangP>
+=======
+            <uGnu>0</uGnu>
+            <useXO>0</useXO>
+            <v6Lang>1</v6Lang>
+            <v6LangP>1</v6LangP>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>
@@ -350,7 +367,11 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
+<<<<<<< HEAD
             <uClangAs>0</uClangAs>
+=======
+            <ClangAsOpt>1</ClangAsOpt>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -410,6 +431,7 @@
               <FileName>dma.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/dma.c</FilePath>
+<<<<<<< HEAD
               <FileOption>
                 <CommonProperty>
                   <UseCPPCompiler>2</UseCPPCompiler>
@@ -460,6 +482,8 @@
                   </Cads>
                 </FileArmAds>
               </FileOption>
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
             </File>
             <File>
               <FileName>spi.c</FileName>
@@ -536,11 +560,14 @@
               <FileType>1</FileType>
               <FilePath>..\FunctionCode\function\separate_button.c</FilePath>
             </File>
+<<<<<<< HEAD
             <File>
               <FileName>bsp_hal_uart3dma232AndTTL.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\FunctionCode\function\BSP_HAL_UART3DMA232AndTTL\bsp_hal_uart3dma232AndTTL.c</FilePath>
             </File>
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
           </Files>
         </Group>
         <Group>
@@ -626,6 +653,10 @@
                 <uThumb>2</uThumb>
                 <uSurpInc>2</uSurpInc>
                 <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                 <useXO>2</useXO>
                 <v6Lang>0</v6Lang>
                 <v6LangP>0</v6LangP>
@@ -651,7 +682,11 @@
                 <NoWarn>2</NoWarn>
                 <uSurpInc>2</uSurpInc>
                 <useXO>2</useXO>
+<<<<<<< HEAD
                 <uClangAs>2</uClangAs>
+=======
+                <ClangAsOpt>0</ClangAsOpt>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                 <VariousControls>
                   <MiscControls></MiscControls>
                   <Define></Define>
@@ -699,6 +734,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -754,6 +793,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -809,6 +852,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -864,6 +911,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -919,6 +970,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -974,6 +1029,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -1029,6 +1088,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -1084,6 +1147,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -1139,6 +1206,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -1194,6 +1265,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -1249,6 +1324,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -1304,6 +1383,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -1359,6 +1442,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -1414,6 +1501,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -1469,6 +1560,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -1524,6 +1619,10 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
+<<<<<<< HEAD
+=======
+                    <uGnu>2</uGnu>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -1554,8 +1653,13 @@
   <RTE>
     <apis/>
     <components>
+<<<<<<< HEAD
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.0.1" condition="ARMv6_7_8-M Device">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.0.1"/>
+=======
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="4.3.0" condition="CMSIS Core">
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="4.5.0"/>
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
         <targetInfos>
           <targetInfo name="STM32F103R8_IOC"/>
         </targetInfos>

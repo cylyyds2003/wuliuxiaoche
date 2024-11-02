@@ -37,6 +37,7 @@ DCMotorMiniwattDef_t DCMotorMiniwatt4_S;
 /*******µ×ÅÌ¿ØÖÆÊý¾ÝÉùÃ÷*******/
 UnderpanPostureDef_t UnderpanPosture_S;
 /* À©Õ¹±äÁ¿ ------------------------------------------------------------------*/
+<<<<<<< HEAD
 PID position_id1;//id   1
 PID position_id2;//id   1
 PID position_id3;//id   1
@@ -52,13 +53,25 @@ float _abs(float num)
 {
 	return num < 0 ? -num : num;
 }
+=======
+CascadePID position_id1;//id   1
+CascadePID position_id2;//id   1
+CascadePID position_id3;//id   1
+CascadePID position_id4;//id   1
+
+
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 /* º¯ÊýÌå --------------------------------------------------------------------*/
 /***********************************************************************************************
 
                                        Ó²¼þÅäÖÃº¯Êý
 
 ************************************************************************************************/
+<<<<<<< HEAD
 void PID_out(uint8_t flag,int16_t setcm ,float angle,uint8_t x,uint8_t y);
+=======
+void PID_out(uint8_t flag,int16_t set);
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 
 static uint8_t Wireless_UP(void)
 {
@@ -116,7 +129,11 @@ static uint8_t Wireless_R1(void)
 
 ************************************************************************************************/
 /*******¶æ»ú¿ØÖÆ*******/
+<<<<<<< HEAD
 static void ServoSetPluseAndTime(uint8_t mode, uint16_t pwmval,uint16_t time)//¶æ»ú¿ØÖÆº¯Êý
+=======
+static void ServoSetPluseAndTime(uint8_t mode, uint16_t pwmval,uint16_t time)
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 {
 	if(mode > SERVO_CH6)
 	{
@@ -141,6 +158,7 @@ static void ServoSetPluseAndTime(uint8_t mode, uint16_t pwmval,uint16_t time)//¶
 	AngleValue[mode] = pwmval;
 	AngleTimeValue[mode] = time;
 }
+<<<<<<< HEAD
 uint8_t judge(void)
 {
 	if
@@ -256,6 +274,8 @@ void zuozhuan_hanshu(float set_angle)
     three = DCMotorMiniwatt3_S.Motor_UploadData.DATE.Fault*L;
 		four =  DCMotorMiniwatt4_S.Motor_UploadData.DATE.Fault*L;
 }
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 /***********************************************************************************************
 
                                        Ó¦ÓÃÊÂ¼þ£¨ÖÐ¶Ï£©º¯Êý
@@ -265,6 +285,7 @@ void zuozhuan_hanshu(float set_angle)
   * @param  None
   * @retval None
   */
+<<<<<<< HEAD
 static void TimeBreakExecution_Handler(void) //1ms
 {
 	static uint16_t time = 0;
@@ -275,12 +296,22 @@ static void TimeBreakExecution_Handler(void) //1ms
       PID_out(ID3,three,angle,x_set,y_set);
       PID_out(ID4,four,angle,x_set,y_set); 
     /*    sportflagÊÇ·½Ïò£¬ljÊÇÎªÁËÖ»¸øµç»úÄ¿±ê¸³Ò»´ÎÖµÉè¶¨µÄ      */ 
+=======
+static void TimeBreakExecution_Handler(void) 
+{
+	static uint16_t time = 0;
+	PID_out(ID1,4000);
+	PID_out(ID2,4000);
+	PID_out(ID3,4000);
+	PID_out(ID4,4000);
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 	//=========¶æ»ú¿ØÖÆº¯Êý==============================
 	time++;
 	if(time == 20)
 	{//20MS·¢ËÍÒ»´Î¶æ»ú¿ØÖÆÖ¸Áî
 		time = 0;
 		SLAVE_SteeringEngine6CH_MoreMotorControl(&Servo_Device_S,
+<<<<<<< HEAD
                                              AngleValue[0],AngleTimeValue[0],
                                              AngleValue[1],AngleTimeValue[1],
                                              AngleValue[2],AngleTimeValue[2],
@@ -292,10 +323,183 @@ static void TimeBreakExecution_Handler(void) //1ms
 	button_ticks();
 	//==========µ×ÅÌ¿ØÖÆÉ¨Ãèº¯Êý=====================
 	//UnderpanControl_Scan(&UnderpanPosture_S);       //scan±ð¼ÓÉÏÁË£¬»á¶¥µôpidµÄÊä³ö
+=======
+                                           AngleValue[0],AngleTimeValue[0],
+									       AngleValue[1],AngleTimeValue[1],
+                                           AngleValue[2],AngleTimeValue[2],
+										   AngleValue[3],AngleTimeValue[3],
+									       AngleValue[4],AngleTimeValue[4],
+                                           AngleValue[5],AngleTimeValue[5]); 
+	}
+	//=========°´¼üÉ¨Ãèº¯Êý==============================
+	button_ticks();
+	//==========µ×ÅÌ¿ØÖÆÉ¨Ãèº¯Êý=====================
+	//UnderpanControl_Scan(&UnderpanPosture_S); 
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 	//=========CANÍ¨Ñ¶Ð­Òé============================
 	Tim_GetCurrentTimeAdd_Scan1MS();    //±ØÐë1ms½øÐÐÉ¨Ãè´Ëº¯Êý
 	CANCommunication_Scan();            //×îºÃÒ²1ms½øÐÐÉ¨Ãè
 }
+<<<<<<< HEAD
+=======
+/**
+  * @brief  °´¼ü´¥·¢ÊÂ¼þ
+  * @param  None
+  * @retval None
+  */
+static void Arm1PWMAdd(void* btn)
+{
+	uint16_t ServoPrecision = 0;
+	
+	switch(((KEY_T*)btn)->event_flg)
+	{
+		case SIGNAL_PRESS_DOWN: 
+			ServoPrecision = 10;
+			break;
+		case SIGNAL_LONG_PRESS_HOLD: 
+			ServoPrecision = 20;
+			break;
+	}
+	ServoSetPluseAndTime(SERVO_ARM1, AngleValue[SERVO_ARM1]+ServoPrecision,20);
+}
+static void Arm3PWMAdd(void* btn)
+{
+	uint16_t ServoPrecision = 0;
+	
+	switch(((KEY_T*)btn)->event_flg)
+	{
+		case SIGNAL_PRESS_DOWN: 
+			ServoPrecision = 10;
+			break;
+		case SIGNAL_LONG_PRESS_HOLD: 
+			ServoPrecision = 20;
+			break;
+	}
+	ServoSetPluseAndTime(SERVO_ARM3, AngleValue[SERVO_ARM3]+ServoPrecision,20);
+}
+static void Arm2PWMAdd(void* btn)
+{
+	uint16_t ServoPrecision = 0;
+	
+	switch(((KEY_T*)btn)->event_flg)
+	{
+		case SIGNAL_PRESS_DOWN: 
+			ServoPrecision = 10;
+			break;
+		case SIGNAL_LONG_PRESS_HOLD: 
+			ServoPrecision = 20;
+			break;
+	}
+	ServoSetPluseAndTime(SERVO_ARM2, AngleValue[SERVO_ARM2]+ServoPrecision,20);
+}
+
+static void ClawPWMAdd(void* btn)
+{
+	uint16_t ServoPrecision = 0;
+	
+	switch(((KEY_T*)btn)->event_flg)
+	{
+		case SIGNAL_PRESS_DOWN: 
+			ServoPrecision = 10;
+			break;
+		case SIGNAL_LONG_PRESS_HOLD: 
+			ServoPrecision = 20;
+			break;
+	}
+	ServoSetPluseAndTime(SERVO_CLAW, AngleValue[SERVO_CLAW]+ServoPrecision,20);
+}
+static void RotaryPWMAdd(void* btn)
+{
+	uint16_t ServoPrecision = 0;
+	
+	switch(((KEY_T*)btn)->event_flg)
+	{
+		case SIGNAL_PRESS_DOWN: 
+			ServoPrecision = 10;
+			break;
+		case SIGNAL_LONG_PRESS_HOLD: 
+			ServoPrecision = 20;
+			break;
+	}
+	ServoSetPluseAndTime(SERVO_ROTARY, AngleValue[SERVO_ROTARY]+ServoPrecision,20);
+}
+static void ClawPWMMinus(void* btn)
+{
+	uint16_t ServoPrecision = 0;
+	
+	switch(((KEY_T*)btn)->event_flg)
+	{
+		case SIGNAL_PRESS_DOWN: 
+			ServoPrecision = 10;
+			break;
+		case SIGNAL_LONG_PRESS_HOLD: 
+			ServoPrecision = 20;
+			break;
+	}
+	ServoSetPluseAndTime(SERVO_CLAW, AngleValue[SERVO_CLAW]-ServoPrecision,20);
+}
+
+static void Arm2PWMMinus(void* btn)
+{
+	uint16_t ServoPrecision = 0;
+	
+	switch(((KEY_T*)btn)->event_flg)
+	{
+		case SIGNAL_PRESS_DOWN: 
+			ServoPrecision = 10;
+			break;
+		case SIGNAL_LONG_PRESS_HOLD: 
+			ServoPrecision = 20;
+			break;
+	}
+	ServoSetPluseAndTime(SERVO_ARM2, AngleValue[SERVO_ARM2]-ServoPrecision,20);
+}
+static void Arm1PWMMinus(void* btn)
+{
+	uint16_t ServoPrecision = 0;
+	
+	switch(((KEY_T*)btn)->event_flg)
+	{
+		case SIGNAL_PRESS_DOWN: 
+			ServoPrecision = 10;
+			break;
+		case SIGNAL_LONG_PRESS_HOLD: 
+			ServoPrecision = 20;
+			break;
+	}
+	ServoSetPluseAndTime(SERVO_ARM1, AngleValue[SERVO_ARM1]-ServoPrecision,20);
+}
+static void Arm3PWMMinus(void* btn)
+{
+	uint16_t ServoPrecision = 0;
+	
+	switch(((KEY_T*)btn)->event_flg)
+	{
+		case SIGNAL_PRESS_DOWN: 
+			ServoPrecision = 10;
+			break;
+		case SIGNAL_LONG_PRESS_HOLD: 
+			ServoPrecision = 20;
+			break;
+	}
+	ServoSetPluseAndTime(SERVO_ARM3, AngleValue[SERVO_ARM3]-ServoPrecision,20);
+}
+static void RotaryPWMMinus(void* btn)
+{
+	uint16_t ServoPrecision = 0;
+	
+	switch(((KEY_T*)btn)->event_flg)
+	{
+		case SIGNAL_PRESS_DOWN: 
+			ServoPrecision = 10;
+			break;
+		case SIGNAL_LONG_PRESS_HOLD: 
+			ServoPrecision = 20;
+			break;
+	}
+	ServoSetPluseAndTime(SERVO_ROTARY, AngleValue[SERVO_ROTARY]-ServoPrecision,20);
+}
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 /***********************************************************************************************
 
                                        Ó¦ÓÃÖ÷º¯Êý
@@ -308,6 +512,7 @@ static void TimeBreakExecution_Handler(void) //1ms
   */
 void PID_Cascade_Init()
 {
+<<<<<<< HEAD
 	PID_Init(&position_id1,0.9f , 0.0f , 0.0f , 70.0f ,70.0f , 1);
 	PID_Init(&position_id2,0.9f , 0.0f , 0.0f , 70.0f ,70.0f , 1);
 	PID_Init(&position_id3,0.5f , 0.0f , 0.0f , 70.0f ,70.0f , 1);
@@ -484,11 +689,45 @@ void put_to_plate()
 //    /*ÊÖ×¦*/          AngleValue[SERVO_CLAW]        = 1500; //SERVO_CLAW    //ÊÖ×¦¶æ»ú
 
 
+=======
+	PID_Init(&position_id1.inner,0.45f , 0.02f , 0.24f , 290.0f ,290.0f , 1);
+	PID_Init(&position_id1.outer,0.4f , 0.0f , 0.0f , 290.0f ,290.0f , 1);
+	PID_Init(&position_id2.inner,0.45f , 0.005f , 0.05f , 290.0f ,290.0f , 1);
+	PID_Init(&position_id2.outer,0.4f , 0.0f , 0.35f , 290.0f ,290.0f , 1);
+	PID_Init(&position_id3.inner,0.45f , 0.005f , 0.05f , 290.0f ,290.0f , 1);
+	PID_Init(&position_id3.outer,0.4f , 0.0f , 0.35f , 290.0f ,290.0f , 1);
+	PID_Init(&position_id4.inner,0.45f , 0.005f , 0.05f , 290.0f ,290.0f , 1);//p 1.2
+	PID_Init(&position_id4.outer,0.4f , 0.0f , 0.35f , 290.0f ,290.0f , 1);//p 0.8
+}
+
+void PID_out(uint8_t flag , int16_t set)
+{
+	
+	switch(flag)
+	{
+		case ID1:	speed = SLAVE_DCMotorMiniwatt_SpeedRead(&DCMotorMiniwatt1_S) ;
+							PID_CascadeCalc(&position_id1,set ,DCMotorMiniwatt1_S.Motor_UploadData.DATE.Fault,speed) ;
+							SLAVE_DCMotorMiniwatt_SpeedSet(&DCMotorMiniwatt1_S,position_id1.output);
+	
+		case ID2:	speed = SLAVE_DCMotorMiniwatt_SpeedRead(&DCMotorMiniwatt2_S) ;
+							PID_CascadeCalc(&position_id2,set,DCMotorMiniwatt2_S.Motor_UploadData.DATE.Fault,speed) ;
+							SLAVE_DCMotorMiniwatt_SpeedSet(&DCMotorMiniwatt2_S,position_id2.output);
+		
+		case ID3: speed = SLAVE_DCMotorMiniwatt_SpeedRead(&DCMotorMiniwatt3_S) ;
+							PID_CascadeCalc(&position_id3,set,DCMotorMiniwatt3_S.Motor_UploadData.DATE.Fault,speed) ;
+							SLAVE_DCMotorMiniwatt_SpeedSet(&DCMotorMiniwatt3_S,position_id3.output);
+		
+		case ID4: speed = SLAVE_DCMotorMiniwatt_SpeedRead(&DCMotorMiniwatt4_S) ;
+							PID_CascadeCalc(&position_id4,set,DCMotorMiniwatt4_S.Motor_UploadData.DATE.Fault,speed) ;
+							SLAVE_DCMotorMiniwatt_SpeedSet(&DCMotorMiniwatt4_S,position_id4.output);
+	}
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 }
 
 static void ApplicationProgram_Iint(void)
 { 
 	/**********************°´¼ü³õÊ¼»¯**************************/  
+<<<<<<< HEAD
 //	button_init(&WirelessUP_S,Wireless_UP,1,300,200);
 //	button_init(&WirelessDOWN_S,Wireless_DOWN,1,300,200);
 //	button_init(&WirelessLEFT_S,Wireless_LEFT,1,300,200);
@@ -533,6 +772,52 @@ static void ApplicationProgram_Iint(void)
 //	button_start(&WirelessREC_S);
 //	button_start(&WirelessL1_S);
 //	button_start(&WirelessR1_S);
+=======
+	button_init(&WirelessUP_S,Wireless_UP,1,300,200);
+	button_init(&WirelessDOWN_S,Wireless_DOWN,1,300,200);
+	button_init(&WirelessLEFT_S,Wireless_LEFT,1,300,200);
+	button_init(&WirelessRIGHT_S,Wireless_RIGHT,1,300,200);
+	button_init(&WirelessTRI_S,Wireless_TRI,1,300,200);
+	button_init(&WirelessCIRCLE_S,Wireless_CIRCLE,1,300,200);
+	button_init(&WirelessFORK_S,Wireless_FORK,1,300,200);
+	button_init(&WirelessREC_S,Wireless_REC,1,300,200);
+	
+	button_init(&WirelessL1_S,Wireless_L1,1,300,200);
+	button_init(&WirelessR1_S,Wireless_R1,1,300,200);
+	
+	button_attach(&WirelessUP_S, PRESS_DOWN,Arm3PWMAdd);
+	button_attach(&WirelessDOWN_S, PRESS_DOWN,Arm3PWMMinus);
+	button_attach(&WirelessLEFT_S, PRESS_DOWN,Arm2PWMAdd);
+	button_attach(&WirelessRIGHT_S, PRESS_DOWN,Arm2PWMMinus);
+	button_attach(&WirelessTRI_S, PRESS_DOWN,Arm1PWMAdd);
+	button_attach(&WirelessFORK_S, PRESS_DOWN,Arm1PWMMinus);
+	button_attach(&WirelessCIRCLE_S, PRESS_DOWN,ClawPWMAdd);
+	button_attach(&WirelessREC_S, PRESS_DOWN,ClawPWMMinus);
+	button_attach(&WirelessL1_S, PRESS_DOWN,RotaryPWMAdd);
+	button_attach(&WirelessR1_S, PRESS_DOWN,RotaryPWMMinus);
+	
+	button_attach(&WirelessUP_S, LONG_PRESS_HOLD,Arm3PWMAdd);
+	button_attach(&WirelessDOWN_S, LONG_PRESS_HOLD,Arm3PWMMinus);
+	button_attach(&WirelessLEFT_S, LONG_PRESS_HOLD,Arm2PWMAdd);
+	button_attach(&WirelessRIGHT_S, LONG_PRESS_HOLD,Arm2PWMMinus);
+	button_attach(&WirelessTRI_S, LONG_PRESS_HOLD,Arm1PWMAdd);
+	button_attach(&WirelessFORK_S, LONG_PRESS_HOLD,Arm1PWMMinus);
+	button_attach(&WirelessCIRCLE_S, LONG_PRESS_HOLD,ClawPWMAdd);
+	button_attach(&WirelessREC_S, LONG_PRESS_HOLD,ClawPWMMinus);
+	button_attach(&WirelessL1_S, LONG_PRESS_HOLD,RotaryPWMAdd);
+	button_attach(&WirelessR1_S, LONG_PRESS_HOLD,RotaryPWMMinus);
+	
+	button_start(&WirelessUP_S);
+	button_start(&WirelessDOWN_S);
+	button_start(&WirelessLEFT_S);
+	button_start(&WirelessRIGHT_S);
+	button_start(&WirelessTRI_S);
+	button_start(&WirelessCIRCLE_S);
+	button_start(&WirelessFORK_S);
+	button_start(&WirelessREC_S);
+	button_start(&WirelessL1_S);
+	button_start(&WirelessR1_S);
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 	/**********************PS2Ò£¿Ø³õÊ¼»¯***********************/
 	PS2_SetInit();
 	/**********************Êý¾Ý³õÊ¼»¯**************************/
@@ -544,7 +829,11 @@ static void ApplicationProgram_Iint(void)
 	SLAVE_SteeringEngine6CH_Init(&Servo_Device_S,1); //³õÊ¼¶æ»úÄ£¿éÊý¾Ý,IDÎª1
 	
 	UnderpanControl_Init(&UnderpanPosture_S,
+<<<<<<< HEAD
                          FOUR_DRIVE_OMNIDIRECTIONALWHEEL_90,
+=======
+                         FOUR_DRIVE_OMNIDIRECTIONALWHEEL_90_AUTO,
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 						 400,
 						 &DCMotorMiniwatt1_S,  //1ºÅ
 						 &DCMotorMiniwatt2_S,  //2ºÅ
@@ -567,15 +856,27 @@ void ApplicationProgram_main(void)
 {
 	uint8_t a;
 	int16_t yawbuff = 0;
+<<<<<<< HEAD
   int16_t y_axisbuff = 0;
+=======
+   int16_t y_axisbuff = 0;
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 	int16_t x_axisbuff = 0;
 	
 	int16_t upperyawbuff = 0;
 	
+<<<<<<< HEAD
   ApplicationProgram_Iint();
   
   while(1)
   {	
+=======
+    ApplicationProgram_Iint();
+
+    while(1)
+	{	
+		
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 		t=SLAVE_DCMotorMiniwatt_PlaceRead(&DCMotorMiniwatt1_S);
 		if( !PS2_RedLight()) 
 		{//ÅÐ¶ÏÊÖ±úÊÇ·ñÎªºìµÆÄ£Ê½£¬ÊÇ£¬Ö¸Ê¾µÆLEDµãÁÁ
@@ -604,6 +905,7 @@ void ApplicationProgram_main(void)
 			yawbuff = 0;
 			PS2_ClearData();
 		}
+<<<<<<< HEAD
 		HAL_Delay(50);//±ðÉ¾£¬É¾ÁË¿ÉÄÜ³öÎÊÌâ
     
     /*Õâ¸öÂ·¾¶Âß¼­ºÜ³¤£¬¾õµÃ²»ºÃ¿´¿ÉÒÔ·â×°Ò»ÏÂ*///cylÒÑ·â×°
@@ -635,3 +937,95 @@ void ApplicationProgram_main(void)
 }
     
 
+=======
+//		UnderpanPosture_S.y_axis = y_axisbuff;
+//		UnderpanPosture_S.x_axis = x_axisbuff;
+//		UnderpanPosture_S.yaw = yawbuff;
+		
+		if(upperyawbuff > 0)
+		{
+			AngleValue[4]+=40;
+			if(AngleValue[4]>2500)
+			{
+				AngleValue[4]=2500;
+			}
+		}
+		else if(upperyawbuff < 0)
+		{
+			AngleValue[4]-=40;
+			if(AngleValue[4]<500)
+			{
+				AngleValue[4]=500;
+			}
+		}
+		if(yawbuff > 0)
+		{
+			AngleValue[3]+=40;
+			if(AngleValue[3]>2500)
+			{
+				AngleValue[3]=2500;
+			}
+		}
+		else if(yawbuff < 0)
+		{
+			AngleValue[3]-=40;
+			if(AngleValue[3]<500)
+			{
+				AngleValue[3]=500;
+			}
+		}
+		if(y_axisbuff> 0)
+		{
+			AngleValue[2]+=40;
+			if(AngleValue[2]>2500)
+			{
+				AngleValue[2]=2500;
+			}
+		}
+		else if(y_axisbuff < 0)
+		{
+			AngleValue[2]-=40;
+			if(AngleValue[2]<500)
+			{
+				AngleValue[2]=500;
+			}
+		}
+		if(x_axisbuff>0)
+		{
+			AngleValue[1]+=40;
+			if(AngleValue[1]>2500)
+			{
+				AngleValue[1]=2500;
+			}
+		}
+		else if(x_axisbuff < 0)
+		{
+			AngleValue[1]-=40;
+			if(AngleValue[1]<500)
+			{
+				AngleValue[1]=500;
+			}
+		}
+		if(PS2_Data.DATE.key2_U.bit.R2  == 0)
+		{
+			HAL_Delay(20);
+			flag++;
+			if(flag%2==1)
+			{
+			AngleValue[0]=2500;
+			AngleTimeValue [0] = 700;
+			}
+			else if(flag%2==0)
+			{
+				AngleValue[0]=1500;
+			AngleTimeValue [0] = 700;
+			}
+			if(flag==2)
+			{
+				flag=0;
+			}
+		}
+		HAL_Delay(50);
+	}
+}
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671

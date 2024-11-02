@@ -1,5 +1,6 @@
 #ifndef __APP_H
 #define __APP_H
+<<<<<<< HEAD
 void ApplicationProgram_main(void);
 #endif
 /* 引入头文件 ----------------------------------------------------------------*/
@@ -86,3 +87,17 @@ void second_get_from_tray(void);
 void second_work_in_rough_area(void);  /*把物料放到粗加工区再取回来*/
 void second_work_in_temporary_area(void);/*把物料放到暂存区*/
 void second_path(void);
+=======
+
+
+
+
+
+
+
+
+void ApplicationProgram_main(void);
+
+
+#endif
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671

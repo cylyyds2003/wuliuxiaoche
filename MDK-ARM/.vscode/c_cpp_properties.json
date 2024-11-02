@@ -3,6 +3,7 @@
         {
             "name": "STM32F103R8_IOC",
             "includePath": [
+<<<<<<< HEAD
                 "e:\\日常生活文件夹，5A级\\文档\\学习\\比赛\\2024大二上（自动化）\\物流\\代码\\-test7\\Inc",
                 "e:\\日常生活文件夹，5A级\\文档\\学习\\比赛\\2024大二上（自动化）\\物流\\代码\\-test7\\Drivers\\STM32F1xx_HAL_Driver\\Inc",
                 "e:\\日常生活文件夹，5A级\\文档\\学习\\比赛\\2024大二上（自动化）\\物流\\代码\\-test7\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy",
@@ -27,6 +28,32 @@
                 "e:\\日常生活文件夹，5A级\\文档\\学习\\比赛\\2024大二上（自动化）\\物流\\代码\\-test7\\FunctionCode\\CAN_Communication\\SlaveControlPanel\\SLAVE_DCMotorMiniwatt",
                 "e:\\日常生活文件夹，5A级\\文档\\学习\\比赛\\2024大二上（自动化）\\物流\\代码\\-test7\\FunctionCode\\CAN_Communication\\SlaveControlPanel\\SLAVE_SteeringEngine_6CH",
                 "e:\\日常生活文件夹，5A级\\文档\\学习\\比赛\\2024大二上（自动化）\\物流\\代码\\-test7\\Drivers\\STM32F1xx_HAL_Driver\\Src"
+=======
+                "f:\\local_git\\wuliu\\Inc",
+                "f:\\local_git\\wuliu\\Drivers\\STM32F1xx_HAL_Driver\\Inc",
+                "f:\\local_git\\wuliu\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy",
+                "f:\\local_git\\wuliu\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include",
+                "f:\\local_git\\wuliu\\Drivers\\CMSIS\\Include",
+                "f:\\local_git\\wuliu\\FunctionCode\\BSP",
+                "f:\\local_git\\wuliu\\FunctionCode\\BSP\\si4463",
+                "f:\\local_git\\wuliu\\FunctionCode\\function",
+                "f:\\local_git\\wuliu\\FunctionCode\\CAN_Communication",
+                "f:\\local_git\\wuliu\\FunctionCode\\CAN_Communication\\SlaveControlPanel",
+                "f:\\local_git\\wuliu\\FunctionCode\\UserDefinedProtocol",
+                "f:\\local_git\\wuliu\\FunctionCode\\APP",
+                "D:\\keil5\\ARM\\ARMCC\\include",
+                "D:\\keil5\\ARM\\ARMCC\\include\\rw",
+                "f:\\local_git\\wuliu\\MDK-ARM",
+                "f:\\local_git\\wuliu\\Src",
+                "f:\\local_git\\wuliu\\FunctionCode\\BSP\\BSP_HAL_GPIO",
+                "f:\\local_git\\wuliu\\FunctionCode\\BSP\\BSP_HAL_TIME",
+                "f:\\local_git\\wuliu\\FunctionCode\\BSP\\BSP_HAL_CAN",
+                "f:\\local_git\\wuliu\\FunctionCode\\BSP\\BSP_HAL_PS2",
+                "f:\\local_git\\wuliu\\FunctionCode\\function\\UnderpanControl_Motor",
+                "f:\\local_git\\wuliu\\FunctionCode\\CAN_Communication\\SlaveControlPanel\\SLAVE_DCMotorMiniwatt",
+                "f:\\local_git\\wuliu\\FunctionCode\\CAN_Communication\\SlaveControlPanel\\SLAVE_SteeringEngine_6CH",
+                "f:\\local_git\\wuliu\\Drivers\\STM32F1xx_HAL_Driver\\Src"
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
             ],
             "defines": [
                 "USE_HAL_DRIVER",

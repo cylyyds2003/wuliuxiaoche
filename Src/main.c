@@ -17,6 +17,10 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "can.h"
@@ -33,6 +37,10 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -58,7 +66,10 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+<<<<<<< HEAD
 //uint8_t transimt=20;
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 
 /* USER CODE END 0 */
 
@@ -96,6 +107,7 @@ int main(void)
   MX_SPI2_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
+<<<<<<< HEAD
   MX_USART3_UART_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
@@ -103,22 +115,35 @@ int main(void)
 //      uint8_t transimt=1;
 //  HAL_UART_Transmit(&huart3,&transimt,1,1000);
 //    HAL_Delay(500);
+=======
+  MX_USART1_UART_Init();
+  MX_USART2_UART_Init();
+  MX_USART3_UART_Init();
+  /* USER CODE BEGIN 2 */
+
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+<<<<<<< HEAD
    //   HAL_UART_Transmit_IT(&huart3,&transimt,1);     // 此函数会导致    huart->gState = HAL_UART_STATE_BUSY_TX;进而导致后续无法再发送
 //    HAL_UART_Transmit(&huart3,&transimt,1,1000);
 //	  HAL_Delay(1000);
 
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 	  ApplicationProgram_main();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+<<<<<<< HEAD
 	       
 
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
   }
   /* USER CODE END 3 */
 }
@@ -132,8 +157,12 @@ void SystemClock_Config(void)
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
+<<<<<<< HEAD
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
+=======
+  /** Initializes the CPU, AHB and APB busses clocks
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
@@ -146,8 +175,12 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+<<<<<<< HEAD
 
   /** Initializes the CPU, AHB and APB buses clocks
+=======
+  /** Initializes the CPU, AHB and APB busses clocks
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
@@ -163,9 +196,12 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+<<<<<<< HEAD
 /**
   * @brief This function handles USART2 global interrupt.
   */
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 
 /* USER CODE END 4 */
 
@@ -197,3 +233,8 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+<<<<<<< HEAD
+=======
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671

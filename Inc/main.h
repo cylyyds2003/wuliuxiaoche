@@ -108,7 +108,10 @@ void Error_Handler(void);
 #define KEY3_GPIO_Port GPIOB
 #define KEY4_Pin GPIO_PIN_7
 #define KEY4_GPIO_Port GPIOB
+<<<<<<< HEAD
 
+=======
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
@@ -118,3 +121,8 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
+<<<<<<< HEAD
+=======
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671

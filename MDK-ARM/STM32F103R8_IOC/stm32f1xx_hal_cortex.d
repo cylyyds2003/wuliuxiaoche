@@ -6,13 +6,21 @@ stm32f103r8_ioc\stm32f1xx_hal_cortex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm3
 stm32f103r8_ioc\stm32f1xx_hal_cortex.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 stm32f103r8_ioc\stm32f1xx_hal_cortex.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
 stm32f103r8_ioc\stm32f1xx_hal_cortex.o: ../Drivers/CMSIS/Include/core_cm3.h
+<<<<<<< HEAD
 stm32f103r8_ioc\stm32f1xx_hal_cortex.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+=======
+stm32f103r8_ioc\stm32f1xx_hal_cortex.o: D:\keilruanjian\ARM\ARMCC\Bin\..\include\stdint.h
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 stm32f103r8_ioc\stm32f1xx_hal_cortex.o: ../Drivers/CMSIS/Include/cmsis_version.h
 stm32f103r8_ioc\stm32f1xx_hal_cortex.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 stm32f103r8_ioc\stm32f1xx_hal_cortex.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 stm32f103r8_ioc\stm32f1xx_hal_cortex.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 stm32f103r8_ioc\stm32f1xx_hal_cortex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+<<<<<<< HEAD
 stm32f103r8_ioc\stm32f1xx_hal_cortex.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+=======
+stm32f103r8_ioc\stm32f1xx_hal_cortex.o: D:\keilruanjian\ARM\ARMCC\Bin\..\include\stddef.h
+>>>>>>> 21cb47735d7f375d8cec3fc12fde12452cbe2671
 stm32f103r8_ioc\stm32f1xx_hal_cortex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 stm32f103r8_ioc\stm32f1xx_hal_cortex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 stm32f103r8_ioc\stm32f1xx_hal_cortex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h

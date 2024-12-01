@@ -6,7 +6,7 @@ import sensor, image, time,pyb
 from pyb import UART
 
 #测试223
-
+#1233
 
 
 #状态机 0为寻找二维码 1为物块识�? 2为靶心识�?
